@@ -18,8 +18,49 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.75;
 }
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.txt-head{
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.txt-head h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.txt-head h2{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: aliceblue;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+nav > a:hover{
+    color: #ffd900d8;
+}
+
 body{
     font-family: 'Oswald', sans-serif;
 }
