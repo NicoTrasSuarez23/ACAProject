@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 500px;
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(227, 97%, 24%, 0.705), hsla(210, 96%, 46%, 0.384)), url(../Imagenes/Designer1.jpeg);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(227, 97%, 24%, 0.705), hsla(210, 96%, 46%, 0.384)), url(../Imagenes/Designer1.jpeg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.contenedor-producto, .contenedor-producto1, .contenedor-footer{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #21313C;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
