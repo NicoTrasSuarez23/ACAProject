@@ -4,16 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Se agregan dos link, el primero es los estilos en CSS y el segundo es para usar botonos desde boostrap-->
+    <!--Se agregan dos link, el primero es los estilos en CSS y el segundo es para usar botones desde boostrap-->
     <link rel="stylesheet" href="/Repositorio/CSS/styles_index.css">
     <title>Principal</title>
 </head>
 
 <body>
-    <!--Estos son los enlaces para navegar entre las paginas-->
+    <!--Esta es la barra de navegacion entre paginas-->
     <nav>
-        <a href="/Repositorio/HTML/us.html">
+        <!--Se crea una lista para hacer desplegable dentro del boton Nosotros-->
+        <li class="lista">
             <button type="button" class="btn-success">Nosotros</button>
+            <!--Cada ul al dar clic lo lleva a navegar dentro de la misma pagina index, configurada en el <a>-->
+            <ul>
+                <a href="#">¿Quienes somos?</a>
+            </ul>
+            <ul>
+                <a href="#">¿Por que lo hacemos?</a>
+            </ul>
+            <ul>
+                <a href="#">Nuestro proposito</a>
+            </ul>
+            <ul>
+                <a href="#">Nuestro futuro</a>
+            </ul>
+        </li>
+        <!--Cada boton permite navegar entre paginas-->    
+        <a href="/Repositorio/HTML/information.html">
+            <button type="button" class="btn-success">¿Por que lo hacemos?</button>
         </a>
         <a href="/Repositorio/HTML/produc.html">
             <button type="button" class="btn-success">Producto</button>
@@ -21,8 +39,9 @@
         <a href="/Repositorio/HTML/contac.html">
             <button type="button" class="btn-success">Contactanos</button>
         </a>
-        <a href="/Repositorio/HTML/information.html">
+        <a href="/Repositorio/HTML/shopping.html">
              <button type="button" class="btn-success">
+                <!--enlace boostrap para cargar la imagen del carrito de compras-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
                 </svg>
@@ -33,8 +52,11 @@
     <header>
         <!--Encabezado de la pagina-->
         <section class="txt-head">
+            <!--Nombre de la empresa-->
             <h1>POWER-BREATH</h1>
+            <!--Eslogan-->
             <H2>Todos por un ecoambiente</H2>
+            <!--Diseño de ola entre la imagen y el cuerpo de la pagina-->
             <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                     style="height: 100%; width: 100%;">
                     <path d="M-13.82,8.41 C183.13,214.64 370.48,-96.19 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
@@ -42,7 +64,7 @@
                 </svg></div>
         </section>
     </header>
-    <main>
+    <main> 
         <section class="contenedor-producto">
             <div class="contenedor-producto1">
                 <h2 class="titulo">¿Que Ofrecemos?</h2>
@@ -56,7 +78,6 @@
                     <img src="/Repositorio/Imagenes/Designer2.jpeg" alt="Diseño_Catalizador" class="ilustracion1">
                 </div>
             </div>
-            
         </section>
     </main>
     <footer>
