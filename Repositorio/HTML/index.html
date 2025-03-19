@@ -16,17 +16,11 @@
         <li class="lista">
             <button type="button" class="btn-success">Nosotros</button>
             <!--Cada ul al dar clic lo lleva a navegar dentro de la misma pagina index, configurada en el <a>-->
-            <ul>
-                <a href="#titulo1">¿Quienes somos?</a>
-            </ul>
-            <ul>
-                <a href="#titulo2">¿Que ofrecemos?</a>
-            </ul>
-            <ul>
-                <a href="#titulo3">Alcance</a>
-            </ul>
-            <ul>
-                <a href="#titulo4">Futuro</a>
+            <ul class="despegable">
+                <li><a href="#titulo1">Alcance</a></li>
+                <li><a href="#titulo2">¿Qué ofrecemos?</a></li>
+                <li><a href="#titulo3">¿Quiénes somos?</a></li>
+                <li><a href="#titulo4">Futuro</a></li>
             </ul>
         </li>
         <!--Cada boton permite navegar entre paginas-->
@@ -56,9 +50,13 @@
         <!--Encabezado de la pagina-->
         <section class="txt-head">
             <!--Nombre de la empresa-->
-            <h1>POWER-BREATH</h1>
+            <h1 class="nombre-empresa">POWER-BREATH</h1>
+            <!--Imagen de la empresa-->
+            <div class="logo">
+                <img src="/Repositorio/Imagenes/Logo1.jpeg" alt="Logo" class="imglogo">
+            </div>
             <!--Eslogan-->
-            <H2>Todos por un ecoambiente</H2>
+            <H2 class="eslogan">Todos por un ecoambiente</H2>
             <!--Diseño de ola entre la imagen y el cuerpo de la pagina-->
             <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
                     preserveAspectRatio="none" style="height: 100%; width: 100%;">

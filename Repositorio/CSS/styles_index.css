@@ -5,12 +5,13 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
-/*Nav*/
+/*Barra de navegacion*/
+
+/* Estilo para la barra de navegación */
 nav{
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    text-align: center;
     padding: 15px 20px;
 }
 nav > a{
@@ -32,39 +33,41 @@ nav > a{
     background-color: #0575e6;
     color: #ffffff;
 }
+/*Se quita el estilo de punto y subrayado*/
 li, ul, ol{
     list-style: none;
     text-decoration: none;
 }
-li ul{
-    display: flex;
-    height: 15px;
-    background-color: transparent;
-    border: none;
-    padding: 5px 5px;
-    margin: 10px 10px;
-    font-size: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    justify-content: center;
-    text-decoration: none;
-}
-li > ul > a{
+/* Ocultar la lista desplegable por defecto */
+nav .despegable{
     display: none;
     position: absolute;
-    min-width: 130px;
-    color: #000000;
-    font-weight: 300;
+    background-color: #00000077;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.767);
+    list-style: none;
+    z-index: 1000;
+}
+/* Mostrar la lista desplegable al pasar el mouse sobre el botón "Nosotros" */
+nav .lista:hover .despegable {
+    display: block;
+
+}
+/* Estilo para los enlaces dentro de la lista desplegable */
+nav .despegable li a {
+    display: block;
+    color: #ffffff;
+    font-weight: 400;
     text-decoration: none;
     font-size: 15px;
-    border-radius: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-li ul a:hover {
+/* Cambiar el color al pasar el mouse sobre los enlaces */
+nav .despegable li a:hover {
     background-color: #0575e6;
     color: #ffffff;
-}
-li ul:hover > a{
-    display: block;
 }
 /*Header*/
 header{
@@ -82,6 +85,13 @@ header{
     background-size: cover;
     opacity: 0.75;
 }
+.logo .imglogo{
+    width: 180px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
 .wave{
     position: absolute;
     bottom: 0;
@@ -95,14 +105,15 @@ header{
     align-items: center;
     justify-content: center;
 }
-.txt-head h1{
+.nombre-empresa{
     color: #fff;
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 5px;
 }
-.txt-head h2{
+.eslogan{
+    padding: 10px 0;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
@@ -165,27 +176,22 @@ header{
         background-size: cover;
         background-position: center;
     }
-
     nav {
         text-align: center;
         padding: 20px 0;
     }
-
     nav > a {
         display: block;
         margin: 10px 0;
         font-size: 18px;
     }
-
     .txt-head {
         height: auto;
         padding: 20px;
     }
-
     .txt-head h1 {
         font-size: 2.5rem;
     }
-
     .txt-head h2 {
         font-size: 1.25rem;
     }
@@ -197,46 +203,37 @@ header{
         background-size: cover;
         background-position: center;
     }
-
     nav {
         text-align: center;
         padding: 10px 0;
     }
-
     nav > a {
         display: block;
         margin: 5px 0;
         font-size: 16px;
     }
-
     .txt-head {
         height: auto;
         padding: 10px;
     }
-
     .txt-head h1 {
         font-size: 2rem;
     }
-
     .txt-head h2 {
         font-size: 1rem;
     }
-
     .contenedor-producto1 {
         width: 100%;
     }
-
     .contenedor-info {
         padding: 0;
         width: 100%;
         flex-direction: column;
     }
-
     .ilustracion1 {
         max-width: 100%;
         margin-bottom: 20px;
     }
-
     .infoproducto {
         max-width: 100%;
     }
