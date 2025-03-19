@@ -10,7 +10,7 @@ nav{
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    text-align: right;
+    text-align: center;
     padding: 15px 20px;
 }
 nav > a{
@@ -31,6 +31,40 @@ nav > a{
 .btn-success:hover{
     background-color: #0575e6;
     color: #ffffff;
+}
+li, ul, ol{
+    list-style: none;
+    text-decoration: none;
+}
+li ul{
+    display: flex;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: center;
+    text-decoration: none;
+}
+li > ul > a{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 20px;
+}
+li ul a:hover {
+    background-color: #0575e6;
+    color: #ffffff;
+}
+li ul:hover > a{
+    display: block;
 }
 /*Header*/
 header{

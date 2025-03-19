@@ -17,19 +17,19 @@
             <button type="button" class="btn-success">Nosotros</button>
             <!--Cada ul al dar clic lo lleva a navegar dentro de la misma pagina index, configurada en el <a>-->
             <ul>
-                <a href="#">¿Quienes somos?</a>
+                <a href="#titulo1">¿Quienes somos?</a>
             </ul>
             <ul>
-                <a href="#">¿Por que lo hacemos?</a>
+                <a href="#titulo2">¿Que ofrecemos?</a>
             </ul>
             <ul>
-                <a href="#">Nuestro proposito</a>
+                <a href="#titulo3">Alcance</a>
             </ul>
             <ul>
-                <a href="#">Nuestro futuro</a>
+                <a href="#titulo4">Futuro</a>
             </ul>
         </li>
-        <!--Cada boton permite navegar entre paginas-->    
+        <!--Cada boton permite navegar entre paginas-->
         <a href="/Repositorio/HTML/information.html">
             <button type="button" class="btn-success">¿Por que lo hacemos?</button>
         </a>
@@ -40,13 +40,16 @@
             <button type="button" class="btn-success">Contactanos</button>
         </a>
         <a href="/Repositorio/HTML/shopping.html">
-             <button type="button" class="btn-success">
+            <button type="button" class="btn-success">
                 <!--enlace boostrap para cargar la imagen del carrito de compras-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-cart3"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                    </path>
                 </svg>
-            Compra
-                </button>
+                Compra
+            </button>
         </a>
     </nav>
     <header>
@@ -57,25 +60,47 @@
             <!--Eslogan-->
             <H2>Todos por un ecoambiente</H2>
             <!--Diseño de ola entre la imagen y el cuerpo de la pagina-->
-            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                    style="height: 100%; width: 100%;">
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M-13.82,8.41 C183.13,214.64 370.48,-96.19 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                         style="stroke: none; fill: #ffffff;"></path>
                 </svg></div>
         </section>
     </header>
-    <main> 
+    <main>
         <section class="contenedor-producto">
             <div class="contenedor-producto1">
-                <h2 class="titulo">¿Que Ofrecemos?</h2>
-                <h3 class="subtitulo">ULTIMA TECNOLOGIA EN CATALIZADORES</h3>
+                <h2 id="titulo1">¿Quienes somos?</h2>
                 <div class="contenedor-info">
-                    <p class="infoproducto">
+                    <p>
+                        Innovamos con catalizadores que purifican las emisiones de los vehiculos
+                        eliminando las particulas contaminantes, obteniendo un aire de mayor calidad para la sociedad.
+                    </p>
+                </div>
+                <h2 id="titulo2">¿Que Ofrecemos?</h2>
+                <div class="contenedor-info">
+                    <p">
                         Nuestros catalizadores purifican los gases de los vehiculos a un 100% a diferencia de los
                         catalizadores convencionales reduciendo la contaminacion ambiental en gran manera. <br> Hemos
                         diseñado nuestros catalizadores para todo tipo de vehiculo que aun usa combustible fósil li.
                     </p>
-                    <img src="/Repositorio/Imagenes/Designer2.jpeg" alt="Diseño_Catalizador" class="ilustracion1">
+                    <!-- <img src="/Repositorio/Imagenes/Designer2.jpeg" alt="Diseño_Catalizador" class="ilustracion1"> -->
+                </div>
+                <h2 id="titulo3">alcance</h2>
+                <div class="contenedor-info">
+                    <p>
+                        Mitigar el calentamiento global y sus efectos.
+                        Esto implica reducir las emisiones de gases de efecto invernadero que contribuyen al aumento de la temperatura global, y evitar fenómenos extremos como huracanes, sequías e inundaciones
+                    </p>
+                </div>
+                <h2 id="titulo4">futuro</h2>
+                <div class="contenedor-info">
+                    <p>
+                        Implementar tecnologías de purificación avanzadas: Adoptar equipos más eficientes y modernos
+                         que permitan optimizar el proceso de limpieza y purificación de los carburadores, reduciendo 
+                         tiempos y costos operativos.Automatización de procesos: Incorporar sistemas automatizados para mejorar la precisión,
+                        la velocidad y la consistencia de la purificación de carburadores, minimizando los errores humanos y mejorando la calidad.
+                    </p>
                 </div>
             </div>
         </section>
