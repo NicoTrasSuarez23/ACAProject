@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Se agregan dos link, el primero es los estilos en CSS y el segundo es para usar botones desde boostrap-->
-    <link rel="stylesheet" href="/Repositorio/CSS/styles_index.css">
+    <link rel="stylesheet" href="/Repositorio/CSS/styles_contact.css">
     <title>Principal</title>
 </head>
 
@@ -16,26 +16,15 @@
         <div class="logo">
             <img src="/Repositorio/Imagenes/Logo1.jpeg" alt="Logo" class="imglogo">
         </div>
-        <!--Se crea una lista para hacer desplegable dentro del boton Nosotros-->
-        <li class="lista">
-            <button type="button" class="btn-success">Nosotros</button>
-            <!--Cada ul al dar clic lo lleva a navegar dentro de la misma pagina index, configurada en el <a>-->
-            <ul class="despegable">
-                <li><a href="#titulo3">Alcance</a></li>
-                <li><a href="#titulo2">¿Qué ofrecemos?</a></li>
-                <li><a href="#titulo1">¿Quiénes somos?</a></li>
-                <li><a href="#titulo4">Futuro</a></li>
-            </ul>
-        </li>
         <!--Cada boton permite navegar entre paginas-->
-        <a href="/Repositorio/HTML/history.html">
-            <button type="button" class="btn-success">¿Por que lo hacemos?</button>
+        <a href="/Repositorio/HTML/index.html">
+            <button type="button" class="btn-success">Inicio</button>
         </a>
         <a href="/Repositorio/HTML/product.html">
             <button type="button" class="btn-success">Producto</button>
         </a>
-        <a href="/Repositorio/HTML/contact.html">
-            <button type="button" class="btn-success">Contactanos</button>
+        <a href="/Repositorio/HTML/history.html">
+            <button type="button" class="btn-success">¿Por que lo hacemos?</button>
         </a>
         <a href="/Repositorio/HTML/shopping.html">
             <button type="button" class="btn-success">
@@ -50,69 +39,7 @@
             </button>
         </a>
     </nav>
-    <header>
-        <!--Encabezado de la pagina-->
-        <section class="txt-head">
-            <!--Nombre de la empresa-->
-            <h1 class="nombre-empresa">POWER-BREATH</h1>
-            <!--Eslogan-->
-            <H2 class="eslogan">Todos por un ecoambiente</H2>
-            <!--Diseño de ola entre la imagen y el cuerpo de la pagina-->
-            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
-                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M-13.82,8.41 C183.13,214.64 370.48,-96.19 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: #ffffff;"></path>
-                </svg>
-            </div>
-        </section>
-    </header>
     <main>
-        <section class="contenedor">
-            <div class="contenedor-contenido">
-                <h2 id="titulo1">¿Quienes somos?</h2>
-                <div class="contenedor-info1">
-                    <img src="/Repositorio/Imagenes/Designer (4.1).png" alt="prototipo" class="prototipo">
-                    <p class="parrafo1">
-                        Para seguir construyendo un futuro para nuestras proximas generaciones, nos hemos concientizado
-                        y preocupado por nuestro planeta, ya que la mayor contaminacion a nivel ambiental son nuestros
-                        vehiculos a combustion, a causa de esto hemos innovado con un sistema de catalizadores con nueva
-                        tecnologia.
-                    </p>
-                </div>
-                <h2 id="titulo2">¿Que Ofrecemos?</h2>
-                <div class="contenedor-info2">
-                    <p class="parrafo2">
-                        Nuestro producto esta diseñado para todo tipo de vehiculo que usa combustion fosil, reduciendo
-                        el costo del producto, de igual manera la durabilidad es mayor y su reciclaje es mas dinamico.
-                        Nuestros catalizadores purifican los gases de los vehiculos a un 100% a diferencia de los
-                        catalizadores convencionales reduciendo la contaminacion ambiental en gran manera.
-                    </p>
-                </div>
-                <h2 id="titulo3">Nuestro Alcance</h2>
-                <div class="contenedor-info3">
-                    <p class="parrafo3">
-                        Ademas de pensar en mejorar la calidad del ambiente para nuestra sociedad, tambien pensamos en
-                        mejorar el rendimiento de los automotores, gracias a la base ceramica con propiedades
-                        nanometricas y sus mas de 700 celdas de nanotubos de grafeno permiten la sintetizacion de las
-                        emisiones sean mas rapidas.
-                    </p>
-                    <img src="/Repositorio/Imagenes/Designer2.jpeg" alt="Diseño_Catalizador" class="ilustracion1">
-                </div>
-                <h2 id="titulo4">Nuestro Futuro</h2>
-                <div class="contenedor-info4">
-                    <p class="parrafo4">
-                        Gracias a estos catalizadores lograremos mitigar el calentamiento global y sus efectos
-                        como el efecto invernadero que contribuye al aumento de
-                        la temperatura global, de esta manera a futuro evitamos fenómenos extremos como huracanes,
-                        sequías e inundaciones.
-                        <br>
-                        Adoptar equipos más eficientes y modernos que permitan optimizar el proceso de limpieza y
-                        purificación de los carburadores, reduciendo
-                        tiempos y costos operativos.
-                    </p>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <section class="footer">
@@ -170,5 +97,3 @@
         </a>
     </footer>
 </body>
-
-</html>
