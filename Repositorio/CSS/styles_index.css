@@ -8,12 +8,21 @@
 /*Barra de navegacion*/
 
 /* Estilo para la barra de navegación */
+/* Estilo para el logotipo */
+.logo .imglogo{
+    width: 60px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
 nav{
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     padding: 15px 20px;
 }
+/* Estilo para los enlaces de la barra de navegación */
 nav > a{
     color: aliceblue;
     font-weight: 400;
@@ -21,6 +30,7 @@ nav > a{
     font-size: 20px;
     margin-right: 10px;
 }
+/* Estilo para el botón "Nosotros" */
 .btn-success{
     background-color: transparent;
     border: none;
@@ -29,6 +39,7 @@ nav > a{
     border-radius: 20px;
     cursor: pointer;
 }
+/* Cambiar el color al pasar el mouse sobre el botón "Nosotros" */
 .btn-success:hover{
     background-color: #0575e6;
     color: #ffffff;
@@ -52,7 +63,6 @@ nav .despegable{
 /* Mostrar la lista desplegable al pasar el mouse sobre el botón "Nosotros" */
 nav .lista:hover .despegable {
     display: block;
-
 }
 /* Estilo para los enlaces dentro de la lista desplegable */
 nav .despegable li a {
@@ -69,34 +79,30 @@ nav .despegable li a:hover {
     background-color: #0575e6;
     color: #ffffff;
 }
-/*Header*/
+/*FIN Barra de navegacion*/
+
+/*Encabezado*/
+/* Estilo para el encabezado */
 header{
-    width: 100%;
+    width: auto;
     height: 550px;
-    background: #0575e6;  
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, hsla(227, 97%, 24%, 0.705), hsla(210, 96%, 46%, 0.384)), url(../Imagenes/Designer1.jpeg);   
-    /* Chrome 10-25, Safari 5.1-6 */
+    /* Chrome 10-25, Safari 5.1-6 - compatibilidad para versiones de Chrome 10-25, Safari 5.1-6*/
     background: linear-gradient(to top, hsla(227, 97%, 24%, 0.705), hsla(210, 96%, 46%, 0.384)), url(../Imagenes/Designer1.jpeg); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ - Compatiblidad para navegadores W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.75;
 }
-.logo .imglogo{
-    width: 180px;
-    height: 150px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 50%;
-}
+
+/* Estilo para la onda */
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+/* Estilo para el texto del encabezado */
 .txt-head{
     display: flex;
     flex-direction: column;
@@ -105,6 +111,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+/* Estilo para el nombre de la empresa */
 .nombre-empresa{
     color: #fff;
     font-size: 3rem;
@@ -112,6 +119,7 @@ header{
     text-align: center;
     margin-bottom: 5px;
 }
+/* Estilo para el eslogan */
 .eslogan{
     padding: 10px 0;
     color: #fff;
@@ -119,122 +127,123 @@ header{
     font-weight: 400;
     text-align: center;
 }
-/*Main*/
+/*FIN Encabezado*/
 
-.contenedor-producto1, .contenedor-footer{
-    padding: 40px 0;
+/*Contenido*/
+.contenedor{
+    padding: 5px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-.titulo{
-    padding: 0 0 60px 0;
+#titulo1, #titulo2, #titulo3, #titulo4{
+    padding: 0 0 20px 0;
     color: #21313C;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
-.subtitulo{
-    padding: 0 0 20px 0;
-    color: #21313C;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-}
-.contenedor-producto{
-    padding: 20px;
+.contenedor-info1, .contenedor-info2, .contenedor-info3, .contenedor-info4{
     display: flex;
-    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: larger;
+    padding: 0 5%;
+    flex-direction: row;
+    align-items: center;
+    margin: 2%;
+    padding: 0 5%;
+    font-weight: 400;
+    text-align: justify;
+}
+.prototipo{
+    position: relative;
+    width: 220px;
+    height: 200px;
+    border-radius: 30%;
+    box-shadow: 6px 4px 6px #0000006c;
+}
+.parrafo1{
+    padding: 0 0 0 20px;
+}
+.parrafo3{
+    padding: 0 20px 0 0;
 }
 .ilustracion1{
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    position: relative;
+    width: 220px;
+    height: 200px;
+    box-shadow: 6px 4px 6px #0000006c;
 }
-.contenedor-info{
-    padding: 0 0 0 200px;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-bottom: 10px;
-    justify-content: space-between
+.parrafo4{
+    margin-bottom: 30%;
 }
-.infoproducto{
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-/* Media queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    header {
-        height: 400px;
-        background-size: cover;
-        background-position: center;
-    }
-    nav {
-        text-align: center;
-        padding: 20px 0;
-    }
-    nav > a {
-        display: block;
-        margin: 10px 0;
-        font-size: 18px;
-    }
-    .txt-head {
-        height: auto;
-        padding: 20px;
-    }
-    .txt-head h1 {
-        font-size: 2.5rem;
-    }
-    .txt-head h2 {
-        font-size: 1.25rem;
-    }
-}
+/*FIN Contenido*/
 
-@media (max-width: 480px) {
-    header {
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-    }
-    nav {
-        text-align: center;
-        padding: 10px 0;
-    }
-    nav > a {
-        display: block;
-        margin: 5px 0;
-        font-size: 16px;
-    }
-    .txt-head {
-        height: auto;
-        padding: 10px;
-    }
-    .txt-head h1 {
-        font-size: 2rem;
-    }
-    .txt-head h2 {
-        font-size: 1rem;
-    }
-    .contenedor-producto1 {
-        width: 100%;
-    }
-    .contenedor-info {
-        padding: 0;
-        width: 100%;
-        flex-direction: column;
-    }
-    .ilustracion1 {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .infoproducto {
-        max-width: 100%;
-    }
+/*Pie de pagina*/
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+.social{
+    margin: 10px 0 30px 0;
+    background-color: none;
+    color: #ffffff;
+    text-align: center;
+}
+/* Estilo para los botones dentro del footer */
+.contenedor-footer .btn {
+    background-color: #000000; /* Fondo blanco para contrastar con el fondo negro */
+    color: #ffffff; /* Texto negro para que sea legible */
+    padding: 10px 30px; /* Ajusta el espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave para hover */
+}
+#facebook, #WhatsApp, #Instagram, #linkedin{
+    font-size: medium;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+/* Cambiar el estilo al pasar el mouse */
+.contenedor-footer .btn:hover {
+    background-color: #0575e6; /* Fondo azul al pasar el mouse */
+    color: #ffffff; /* Texto blanco al pasar el mouse */
+    border-color: #0575e6; /* Cambiar el color del borde */
+}
+.titulofinal{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+}
+.btn-scroll-up {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: transparent; /* Fondo transparente */
+    color: #000000; /* Texto blanco */
+    border: none;
+    border-radius: 50%; /* Forma circular */
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+/* Cambiar el estilo al pasar el mouse */
+.btn-scroll-up:hover {
+    background-color: #0575e6; /* Azul más oscuro */
+    color: #ffffff; /* Texto blanco */
 }
