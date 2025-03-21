@@ -44,7 +44,87 @@ nav > a{
     background-color: #0575e6;
     color: #ffffff;
 }
-
+/* Estilos generales para el formulario */
+.formulario-contacto {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centra el formulario horizontalmente */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.507); /* Sombra para dar profundidad */
+    text-align: center; /* Centra el texto dentro del formulario */
+}
+/* Estilo para el título del formulario */
+.formulario-contacto h1 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #333333; /* Color oscuro para el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+/* Estilo para el subtítulo */
+.formulario-contacto p {
+    font-size: 1rem; /* Tamaño del subtítulo */
+    color: #666666; /* Color gris para el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+/* Estilo para los campos del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 15px; /* Espaciado entre los campos */
+}
+/* Estilo para cada campo */
+.campo {
+    display: flex;
+    flex-direction: column; /* Apila la etiqueta y el campo verticalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+/* Estilo para las etiquetas */
+.campo label {
+    font-size: 0.9rem; /* Tamaño de la etiqueta */
+    color: #555555; /* Color gris oscuro */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+/* Estilo para los campos de entrada y el selector */
+.campo input{
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 1px solid #cccccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fdfdfd; /* Fondo blanco */
+    transition: all 0.3s ease; /* Animación suave */
+}
+/* Estilo al enfocar los campos */
+.campo input:focus{
+    outline: none; /* Elimina el borde predeterminado */
+    border-color: #0575e6; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px #0080ffc2; /* Sombra al enfocar */
+}
+/* Estilo para el botón de envío */
+.btn-enviar {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #ffffff; /* Texto blanco */
+    background-color: #0575e6; /* Fondo amarillo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+/* Contenedor para organizar código y teléfono en una fila */
+.celu{
+    display: flex; /* Activa Flexbox */
+    gap: 5px; /* Espaciado entre los elementos */
+}
+/* Cambiar el color del botón al pasar el mouse */
+.btn-enviar:hover {
+    background-color: #0080ffc2; /* Fondo más oscuro */
+}
+/* Estilo para el mensaje de agradecimiento */
+.agradecimiento {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #888888; /* Color gris claro */
+    margin-top: 10px; /* Espaciado superior */
+}
 /*Pie de pagina*/
 .footer{
     background-color: #000000;
@@ -111,4 +191,147 @@ nav > a{
 .btn-scroll-up:hover {
     background-color: #0575e6; /* Azul más oscuro */
     color: #ffffff; /* Texto blanco */
+}
+/* Media query para pantallas pequeñas (dispositivos móviles y tabletas) */
+@media (max-width: 768px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav > a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        margin: 5px 0; /* Espaciado entre enlaces */
+    }
+
+    .logo .imglogo {
+        width: 50px; /* Reducir el tamaño del logotipo */
+        height: 40px;
+    }
+
+    /* Ajustar el formulario */
+    .formulario-contacto {
+        max-width: 90%; /* Reducir el ancho del formulario */
+        padding: 20px; /* Reducir el espaciado interno */
+    }
+
+    .formulario-contacto h1 {
+        font-size: 1.8rem; /* Reducir el tamaño del título */
+    }
+
+    .formulario-contacto p {
+        font-size: 0.9rem; /* Reducir el tamaño del subtítulo */
+    }
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir el tamaño de las etiquetas */
+    }
+
+    .campo input,
+    .campo select {
+        font-size: 0.9rem; /* Reducir el tamaño del texto en los campos */
+        padding: 8px; /* Reducir el espaciado interno */
+    }
+
+    .btn-enviar {
+        font-size: 0.9rem; /* Reducir el tamaño del texto del botón */
+        padding: 8px 15px; /* Reducir el espaciado interno */
+    }
+
+    /* Ajustar el contenedor de código y teléfono */
+    .celu {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 10px; /* Espaciado entre los elementos */
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 20px 10px; /* Ajustar el espaciado */
+    }
+
+    .social {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        margin: 10px 0;
+    }
+
+    .contenedor-footer .btn {
+        padding: 8px 20px; /* Reducir el tamaño de los botones */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de scroll-up */
+    .btn-scroll-up {
+        width: 40px; /* Reducir el tamaño del botón */
+        height: 40px;
+        font-size: 0.8rem; /* Reducir el tamaño del ícono */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        padding: 5px;
+    }
+
+    nav > a {
+        font-size: 14px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    .logo .imglogo {
+        width: 40px; /* Reducir el tamaño del logotipo */
+        height: 35px;
+    }
+
+    /* Ajustar el formulario */
+    .formulario-contacto {
+        max-width: 95%; /* Reducir aún más el ancho del formulario */
+        padding: 15px; /* Reducir el espaciado interno */
+    }
+
+    .formulario-contacto h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+    }
+
+    .formulario-contacto p {
+        font-size: 0.8rem; /* Reducir el tamaño del subtítulo */
+    }
+
+    .campo label {
+        font-size: 0.7rem; /* Reducir el tamaño de las etiquetas */
+    }
+
+    .campo input,
+    .campo select {
+        font-size: 0.8rem; /* Reducir el tamaño del texto en los campos */
+        padding: 6px; /* Reducir el espaciado interno */
+    }
+
+    .btn-enviar {
+        font-size: 0.8rem; /* Reducir el tamaño del texto del botón */
+        padding: 6px 10px; /* Reducir el espaciado interno */
+    }
+
+    /* Ajustar el contenedor de código y teléfono */
+    .celu {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 8px; /* Reducir el espaciado entre los elementos */
+    }
+
+    /* Pie de página */
+    .contenedor-footer .btn {
+        padding: 5px 15px; /* Reducir el tamaño de los botones */
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.7rem; /* Reducir el tamaño del texto */
+    }
 }

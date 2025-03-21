@@ -45,7 +45,411 @@ nav > a{
     color: #ffffff;
 }
 
+/* Título del carrito */
+.titulo-carrito h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin: 20px 0;
+}
 
+/* Lista de productos */
+.lista-productos {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Cada producto */
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+}
+
+.producto:last-child {
+    border-bottom: none; /* Elimina la línea divisoria del último producto */
+}
+
+/* Información del producto */
+.info-producto h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.info-producto p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* Acciones del producto */
+.acciones-producto {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Precio del producto */
+.precio {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Controles de cantidad */
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cantidad button {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cantidad button:hover {
+    background-color: #0575e6;
+    color: #ffffff;
+    border-color: #0575e6;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #ff0000; /* Rojo para el ícono de eliminar */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    color: #cc0000; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Resumen de la compra */
+.resumen-compra {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del resumen */
+.resumen-compra h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campo para el cupón */
+.cupon {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cupon input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cupon button {
+    padding: 10px 20px;
+    background-color: #ffaa00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cupon button:hover {
+    background-color: #cc8800;
+}
+
+/* Totales */
+.totales p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.totales span {
+    font-weight: bold;
+}
+
+/* Botones de acciones */
+.acciones-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acciones-compra button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-pagar {
+    background-color: #ffaa00;
+    color: #ffffff;
+}
+
+.btn-pagar:hover {
+    background-color: #cc8800;
+}
+
+.btn-seguir-comprando {
+    background-color: #0575e6;
+    color: #ffffff;
+}
+
+.btn-seguir-comprando:hover {
+    background-color: #045bb5;
+}
+
+.btn-vaciar-carrito {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #cc0000;
+}
+/* Media query para pantallas pequeñas (dispositivos móviles y tabletas) */
+@media (max-width: 768px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav > a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        margin: 5px 0; /* Espaciado entre enlaces */
+    }
+
+    .logo .imglogo {
+        width: 50px; /* Reducir el tamaño del logotipo */
+        height: 40px;
+    }
+
+    /* Título del carrito */
+    .titulo-carrito h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+        margin: 15px 0;
+    }
+
+    /* Lista de productos */
+    .lista-productos {
+        padding: 10px; /* Reducir el espaciado interno */
+        margin: 10px; /* Reducir el margen externo */
+    }
+
+    .producto {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+
+    .info-producto h3 {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    .info-producto p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .acciones-producto {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+
+    .cantidad {
+        gap: 5px; /* Reducir el espaciado entre botones */
+    }
+
+    .cantidad button {
+        padding: 5px 10px; /* Reducir el tamaño de los botones */
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .btn-eliminar {
+        font-size: 1rem; /* Reducir el tamaño del ícono */
+    }
+
+    /* Resumen de la compra */
+    .resumen-compra {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 15px; /* Reducir el espaciado interno */
+        margin: 10px; /* Reducir el margen externo */
+    }
+
+    .resumen-compra h2 {
+        font-size: 1.2rem; /* Reducir el tamaño del título */
+        margin-bottom: 15px;
+    }
+
+    .cupon {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+
+    .cupon input {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        padding: 8px; /* Reducir el espaciado interno */
+    }
+
+    .cupon button {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+    }
+
+    .totales p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .acciones-compra button {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 20px 10px; /* Ajustar el espaciado */
+    }
+
+    .social {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        margin: 10px 0;
+    }
+
+    .contenedor-footer .btn {
+        padding: 8px 20px; /* Reducir el tamaño de los botones */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de scroll-up */
+    .btn-scroll-up {
+        width: 40px; /* Reducir el tamaño del botón */
+        height: 40px;
+        font-size: 0.8rem; /* Reducir el tamaño del ícono */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        padding: 5px;
+    }
+
+    nav > a {
+        font-size: 14px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    .logo .imglogo {
+        width: 40px; /* Reducir el tamaño del logotipo */
+        height: 35px;
+    }
+
+    /* Título del carrito */
+    .titulo-carrito h1 {
+        font-size: 1.2rem; /* Reducir aún más el tamaño del título */
+    }
+
+    /* Lista de productos */
+    .producto {
+        gap: 8px; /* Reducir el espaciado entre elementos */
+    }
+
+    .info-producto h3 {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .info-producto p {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    .cantidad button {
+        padding: 4px 8px; /* Reducir el tamaño de los botones */
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    .btn-eliminar {
+        font-size: 0.9rem; /* Reducir el tamaño del ícono */
+    }
+
+    /* Resumen de la compra */
+    .resumen-compra h2 {
+        font-size: 1rem; /* Reducir el tamaño del título */
+    }
+
+    .cupon input {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+        padding: 6px; /* Reducir el espaciado interno */
+    }
+
+    .cupon button {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+        padding: 6px 10px; /* Reducir el tamaño del botón */
+    }
+
+    .totales p {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    .acciones-compra button {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+        padding: 6px 10px; /* Reducir el tamaño del botón */
+    }
+
+    /* Pie de página */
+    .contenedor-footer .btn {
+        padding: 5px 15px; /* Reducir el tamaño de los botones */
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.7rem; /* Reducir el tamaño del texto */
+    }
+}
 
 
 

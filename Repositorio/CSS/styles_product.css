@@ -170,21 +170,6 @@ nav > a{
     transition: all 0.3s ease;
     margin-left: 10px; /* Espaciado entre los controles y el botón */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Pie de pagina*/
 .footer{
     background-color: #000000;
@@ -251,4 +236,158 @@ nav > a{
 .btn-scroll-up:hover {
     background-color: #0575e6; /* Azul más oscuro */
     color: #ffffff; /* Texto blanco */
+}
+/* Media query para pantallas pequeñas (dispositivos móviles y tabletas) */
+@media (max-width: 768px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav > a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        margin: 5px 0; /* Espaciado entre enlaces */
+    }
+
+    .logo .imglogo {
+        width: 50px; /* Reducir el tamaño del logotipo */
+        height: 40px;
+    }
+
+    /* Ajustar el encabezado */
+    .header {
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 20px;
+        text-align: center; /* Centrar el texto */
+    }
+
+    #pro {
+        font-size: 3rem; /* Reducir el tamaño del texto */
+        top: 20%; /* Ajustar la posición */
+    }
+
+    #textpro {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+        top: 35%; /* Ajustar la posición */
+        padding: 0 10px; /* Agregar espaciado interno */
+    }
+
+    /* Ajustar la sección de productos */
+    .organizador {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        gap: 15px; /* Reducir el espacio entre productos */
+        padding: 5% 10%; /* Ajustar el espaciado interno */
+    }
+
+    .producto1, .producto2, .producto3 {
+        padding: 10px; /* Ajustar el padding */
+        border: #505e6b50 5px solid; /* Reducir el grosor del borde */
+    }
+
+    .textoprod {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        padding: 10px; /* Reducir el espaciado interno */
+    }
+
+    .botones {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 10px; /* Espaciado entre botones */
+    }
+
+    .cantidad-control {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 5px; /* Reducir el espaciado entre controles */
+    }
+
+    .producto1 button, .producto2 button, .producto3 button {
+        font-size: 14px; /* Reducir el tamaño del texto del botón */
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 20px 10px; /* Ajustar el espaciado */
+    }
+
+    .social {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        margin: 10px 0;
+    }
+
+    .contenedor-footer .btn {
+        padding: 8px 20px; /* Reducir el tamaño de los botones */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de scroll-up */
+    .btn-scroll-up {
+        width: 40px; /* Reducir el tamaño del botón */
+        height: 40px;
+        font-size: 0.8rem; /* Reducir el tamaño del ícono */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        padding: 5px;
+    }
+
+    nav > a {
+        font-size: 14px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    .logo .imglogo {
+        width: 40px; /* Reducir el tamaño del logotipo */
+        height: 35px;
+    }
+
+    /* Ajustar el encabezado */
+    .header {
+        padding: 15px;
+    }
+
+    #pro {
+        font-size: 2.5rem; /* Reducir aún más el tamaño del texto */
+    }
+
+    #textpro {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustar la sección de productos */
+    .organizador {
+        padding: 5%; /* Reducir el espaciado interno */
+    }
+
+    .producto1, .producto2, .producto3 {
+        padding: 8px; /* Reducir el padding */
+    }
+
+    .textoprod {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    .producto1 button, .producto2 button, .producto3 button {
+        font-size: 12px; /* Reducir el tamaño del texto del botón */
+        padding: 6px 10px; /* Reducir el tamaño del botón */
+    }
+
+    /* Pie de página */
+    .contenedor-footer .btn {
+        padding: 5px 15px; /* Reducir el tamaño de los botones */
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.7rem; /* Reducir el tamaño del texto */
+    }
 }

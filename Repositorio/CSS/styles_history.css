@@ -44,6 +44,289 @@ nav > a{
     background-color: #0575e6;
     color: #ffffff;
 }
+#historia{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#historia .contenedor1{
+    display: flex;
+    gap: 80px;
+
+}
+#historia .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0 30px;
+}
+#historia .img1{
+    background-image:  url(../Imagenes/dibujo.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+#problematica{
+    padding: 60px 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#problematica .contenedor2{
+    display: flex;
+    gap: 80px;
+}
+#problematica .texto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0 30px;
+}
+#problematica .img2{
+    background-image:  url(../Imagenes/exosto.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+#solucion{
+    padding: 60px 0;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#solucion .contenedor3{
+    display: flex;
+    gap: 80px;
+}
+#solucion .texto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0 30px;
+}
+#solucion .img3{
+    background-image:  url(../Imagenes/diseño\ exosto.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+/* Media query para pantallas pequeñas (dispositivos móviles y tabletas) */
+@media (max-width: 768px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav > a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        margin: 5px 0; /* Espaciado entre enlaces */
+    }
+
+    .logo .imglogo {
+        width: 50px; /* Reducir el tamaño del logotipo */
+        height: 40px;
+    }
+
+    /* Sección de historia */
+    #historia {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        padding: 20px;
+    }
+
+    #historia .contenedor1 {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 20px; /* Reducir el espacio entre elementos */
+    }
+
+    #historia .texto {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Reducir el padding */
+        text-align: center; /* Centrar el texto */
+    }
+
+    #historia .img1 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Sección de problemática */
+    #problematica {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        padding: 20px;
+    }
+
+    #problematica .contenedor2 {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 20px; /* Reducir el espacio entre elementos */
+    }
+
+    #problematica .texto1 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Reducir el padding */
+        text-align: center; /* Centrar el texto */
+    }
+
+    #problematica .img2 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Sección de solución */
+    #solucion {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        padding: 20px;
+    }
+
+    #solucion .contenedor3 {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        gap: 20px; /* Reducir el espacio entre elementos */
+    }
+
+    #solucion .texto2 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Reducir el padding */
+        text-align: center; /* Centrar el texto */
+    }
+
+    #solucion .img3 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 20px 10px; /* Ajustar el espaciado */
+    }
+
+    .social {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        margin: 10px 0;
+    }
+
+    .contenedor-footer .btn {
+        padding: 8px 20px; /* Reducir el tamaño de los botones */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de scroll-up */
+    .btn-scroll-up {
+        width: 40px; /* Reducir el tamaño del botón */
+        height: 40px;
+        font-size: 0.8rem; /* Reducir el tamaño del ícono */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        padding: 5px;
+    }
+
+    nav > a {
+        font-size: 14px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    .logo .imglogo {
+        width: 40px; /* Reducir el tamaño del logotipo */
+        height: 35px;
+    }
+
+    /* Sección de historia */
+    #historia .texto {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    #historia .img1 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Sección de problemática */
+    #problematica .texto1 {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    #problematica .img2 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Sección de solución */
+    #solucion .texto2 {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    #solucion .img3 {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Pie de página */
+    .contenedor-footer .btn {
+        padding: 5px 15px; /* Reducir el tamaño de los botones */
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.7rem; /* Reducir el tamaño del texto */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Pie de pagina*/
 .footer{

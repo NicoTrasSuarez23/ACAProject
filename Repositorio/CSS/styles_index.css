@@ -246,3 +246,142 @@ header{
     background-color: #0575e6; /* Azul más oscuro */
     color: #ffffff; /* Texto blanco */
 }
+/* Media query para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav > a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        margin: 5px 0; /* Espaciado entre enlaces */
+    }
+
+    .logo .imglogo {
+        width: 50px; /* Reducir el tamaño del logotipo */
+        height: 40px;
+    }
+
+    /* Encabezado */
+    header {
+        height: 400px; /* Reducir la altura del encabezado */
+        background-size: cover; /* Asegurar que la imagen de fondo se ajuste */
+    }
+
+    .txt-head {
+        height: auto; /* Ajustar la altura del contenedor de texto */
+        padding: 20px;
+    }
+
+    .nombre-empresa {
+        font-size: 2rem; /* Reducir el tamaño del texto */
+    }
+
+    .eslogan {
+        font-size: 1.2rem; /* Reducir el tamaño del eslogan */
+    }
+
+    /* Contenido */
+    .contenedor {
+        width: 95%; /* Reducir el ancho del contenedor */
+        padding: 10px;
+    }
+
+    #titulo1, #titulo2, #titulo3, #titulo4 {
+        font-size: 1.5rem; /* Reducir el tamaño de los títulos */
+    }
+
+    .contenedor-info1, .contenedor-info2, .contenedor-info3, .contenedor-info4 {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .prototipo, .ilustracion1 {
+        width: 150px; /* Reducir el tamaño de las imágenes */
+        height: 150px;
+        margin: 0 auto; /* Centrar las imágenes */
+    }
+
+    .parrafo1, .parrafo3, .parrafo4 {
+        padding: 0; /* Eliminar el padding */
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 20px 10px; /* Ajustar el espaciado */
+    }
+
+    .social {
+        margin: 10px 0;
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    .contenedor-footer .btn {
+        padding: 8px 20px; /* Reducir el tamaño de los botones */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de scroll-up */
+    .btn-scroll-up {
+        width: 40px; /* Reducir el tamaño del botón */
+        height: 40px;
+        font-size: 0.8rem; /* Reducir el tamaño del ícono */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    /* Ajustar la barra de navegación */
+    nav {
+        padding: 5px;
+    }
+
+    nav > a {
+        font-size: 14px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    .logo .imglogo {
+        width: 40px; /* Reducir el tamaño del logotipo */
+        height: 35px;
+    }
+
+    /* Encabezado */
+    header {
+        height: 300px; /* Reducir la altura del encabezado */
+    }
+
+    .nombre-empresa {
+        font-size: 1.8rem; /* Reducir el tamaño del texto */
+    }
+
+    .eslogan {
+        font-size: 1rem; /* Reducir el tamaño del eslogan */
+    }
+
+    /* Contenido */
+    #titulo1, #titulo2, #titulo3, #titulo4 {
+        font-size: 1.2rem; /* Reducir el tamaño de los títulos */
+    }
+
+    .prototipo, .ilustracion1 {
+        width: 120px; /* Reducir aún más el tamaño de las imágenes */
+        height: 120px;
+    }
+
+    .contenedor-footer .btn {
+        padding: 5px 15px; /* Reducir el tamaño de los botones */
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+
+    .titulofinal {
+        font-size: 0.7rem; /* Reducir el tamaño del texto */
+    }
+}
