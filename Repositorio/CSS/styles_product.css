@@ -44,6 +44,146 @@ nav > a{
     background-color: #0575e6;
     color: #ffffff;
 }
+.header{
+    height: 250px;    
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+#pro {
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #262626, #ffffff, #262626); /* Gradiente para animar */
+    background-size: 300%; /* Aumenta el tamaño del fondo para el efecto de desplazamiento */
+    -webkit-background-clip: text; /* Aplica el gradiente al texto */
+    color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+    animation: animate 10s infinite; /* Aplica la animación */
+}
+/* Keyframes para animar el gradiente */
+@keyframes animate {
+    0% {
+        background-position: 0% 50%; /* Inicia desde la izquierda */
+    }
+    50% {
+        background-position: 100% 50%; /* Mueve el gradiente hacia la derecha */
+    }
+    100% {
+        background-position: 0% 50%; /* Regresa al inicio */
+    }
+}
+#textpro{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    text-justify: justify;
+    transform: translate(-50%, -50%);
+}
+.organizador{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10% 5%;
+}
+.producto1, .producto2, .producto3 {
+    padding: 5px; /* Ajusta el padding para uniformidad */
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    border: #505e6b50 10px solid;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.textoprod{
+    background-color: rgba(0, 0, 0, 0.1); /* Ajusta el color de fondo */
+    padding: 15px; /* Aumenta el espacio interno */
+    margin: 15px;
+    text-align: center; /* Centra el texto horizontalmente */
+    overflow: hidden; /* Evita que el texto desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    border-radius: 5px; /* Bordes redondeados */
+    min-height: 120px; /* Asegura que todas las descripciones tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+}
+
+.producto1 .textoprod, .producto2 .textoprod, .producto3 .textoprod {
+    margin-bottom: 10px; /* Espaciado uniforme entre el texto y el botón */
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.producto1 button, .producto2 button, .producto3 button {
+    margin: 10px auto; /* Centra los botones horizontalmente */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    font-size: 16px; /* Tamaño uniforme del texto del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #0575e6; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.producto1 button:hover, .producto2 button:hover, .producto3 button:hover {
+    background-color: #045bb5; /* Cambia el color al pasar el mouse */
+}
+.cantidad-control button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #0575e6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-ver-carrito {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px; /* Espaciado entre los controles y el botón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Pie de pagina*/
 .footer{

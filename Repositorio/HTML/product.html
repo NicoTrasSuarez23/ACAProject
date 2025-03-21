@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Se agregan dos link, el primero es los estilos en CSS y el segundo es para usar botones desde boostrap-->
     <link rel="stylesheet" href="/Repositorio/CSS/styles_product.css">
+    <script src="/Repositorio/JS/product.js"></script>
     <title>Principal</title>
 </head>
 
@@ -47,6 +48,61 @@
                     En esta sección encontrarás los productos que ofrecemos, para que puedas adquirirlos y disfrutar de
                     sus beneficios.
                 </p>
+            </div>
+        </section>
+        <section class="organizador">
+            <div class="producto1">
+                <img src="/Repositorio/Imagenes/catalizadorcarro.jpeg" alt="Catalizador de carro" class="imgproducto1" width="360px" height="300px">
+                <div class="textoprod">
+                    <h2 id="title1">Catalizador para vehiculo</h2>
+                    <p id="info">Nuestro catalizador vehicular esta diseñado para que se ajuste y acomode a las necesidades de los diferentes motores.<br>
+                    Precio: $500.00
+                    </p>
+                </div>
+                <div class="botones">
+                    <button class="btn-add" onclick="addProduct(this)">Añadir</button>
+                    <div class="cantidad-control" style="display: none;">
+                        <button class="btn-remove" onclick="removeProduct(this)">-</button>
+                        <span class="cantidad">0</span>
+                        <button class="btn-add-more" onclick="addMoreProduct(this)">+</button>
+                        <button class="btn-ver-carrito" onclick="viewCart()">Ver carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto2">
+                    <img src="/Repositorio/Imagenes/catalizadormoto.jpeg" alt="Catalizador de moto" class="imgproducto2"  width="360px" height="300px">
+                <div class="textoprod">
+                    <h2 id="title1">Catalizador para moto</h2>
+                    <p id="info">Este catalizador ademas de purificar las emisiones del motor un 100%, tambien contribuye con un mayor rendimiento al motor. <br>
+                    Precio: $300.00
+                    </p>
+                </div> <div class="botones">
+                    <button class="btn-add" onclick="addProduct(this)">Añadir</button>
+                    <div class="cantidad-control" style="display: none;">
+                        <button class="btn-remove" onclick="removeProduct(this)">-</button>
+                        <span class="cantidad">0</span>
+                        <button class="btn-add-more" onclick="addMoreProduct(this)">+</button>
+                        <button class="btn-ver-carrito" onclick="viewCart()">Ver carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto3">
+                <img src="/Repositorio/Imagenes/catalizadorcamion.jpeg" alt="Catalizador de camion" class="imgproducto3"  width="360px" height="300px">
+                <div class="textoprod">
+                    <h2 id="title1">Catalizador para Camiones</h2>
+                    <p id="info">Catalizadores robustos diseñados para camiones y tractomulas con trabajo pesado<br>
+                    Precio: $1000.00
+                    </p>
+                </div>
+                <div class="botones">
+                    <button class="btn-add" onclick="addProduct(this)">Añadir</button>
+                    <div class="cantidad-control" style="display: none;">
+                        <button class="btn-remove" onclick="removeProduct(this)">-</button>
+                        <span class="cantidad">0</span>
+                        <button class="btn-add-more" onclick="addMoreProduct(this)">+</button>
+                        <button class="btn-ver-carrito" onclick="viewCart()">Ver carrito</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
