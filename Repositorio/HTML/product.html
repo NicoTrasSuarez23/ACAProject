@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Se agregan dos link, el primero es los estilos en CSS y el segundo es para usar botones desde boostrap-->
     <link rel="stylesheet" href="/Repositorio/CSS/styles_product.css">
+    <link rel="stylesheet" href="/Repositorio/CSS/styles_shopping.css">
     <script src="/Repositorio/JS/product.js"></script>
     <title>POWER-BREATH - PRODUCTO</title>
 </head>
@@ -26,18 +27,6 @@
         </a>
         <a href="/Repositorio/HTML/contact.html">
             <button type="button" class="btn-success">Contactanos</button>
-        </a>
-        <a href="/Repositorio/HTML/shopping.html">
-            <button type="button" class="btn-success">
-                <!--enlace boostrap para cargar la imagen del carrito de compras-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-cart3"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
-                    </path>
-                </svg>
-                Compra
-            </button>
         </a>
     </nav>
     <main>
@@ -103,6 +92,68 @@
                         <button class="btn-ver-carrito" onclick="viewCart()">Ver carrito</button>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <!-- Título de la página -->
+        <section class="titulo-carrito">
+            <h1>Resumen de compras</h1>
+        </section>
+
+        <!-- Lista de productos -->
+        <section class="lista-productos">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <div class="info-producto">
+                    <h3>Catalizador para vehiculo</h3>
+                    <p>Gracias por comprar en Power-Breath</p>
+                </div>
+                <div class="acciones-producto">
+                    <span class="precio">$500.00</span>
+                    <div class="cantidad">
+                        <button class="btn-remove">-</button>
+                        <span class="cantidad-numero">1 und.</span>
+                        <button class="btn-add">+</button>
+                    </div>
+                    <button class="btn-eliminar">🗑️</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <div class="info-producto">
+                    <h3>Catalizador para moto</h3>
+                    <p>Gracias por comprar en Power-Breath</p>
+                </div>
+                <div class="acciones-producto">
+                    <span class="precio">$300.00</span>
+                    <div class="cantidad">
+                        <button class="btn-remove">-</button>
+                        <span class="cantidad-numero">1 und.</span>
+                        <button class="btn-add">+</button>
+                    </div>
+                    <button class="btn-eliminar">🗑️</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen de precios -->
+        <section class="resumen-compra">
+            <h2>Pago Total</h2>
+            <div class="cupon">
+                <input type="text" placeholder="Ingresar cupón de descuento">
+                <button class="btn-aplicar">Aplicar</button>
+            </div>
+            <div class="totales">
+                <p>Subtotal: <span>$800.00</span></p>
+                <p>IVA 10%: <span>$80.00</span></p>
+                <p>Total: <span>$880.00</span></p>
+            </div>
+            <div class="acciones-compra">
+                <button class="btn-pagar">Ir a pagar / Total: $880.00</button>
+                <button class="btn-seguir-comprando">Seguir comprando</button>
+                <button class="btn-vaciar-carrito">Vaciar carrito</button>
             </div>
         </section>
     </main>
